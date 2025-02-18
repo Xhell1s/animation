@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: 2px solid red;
+    position: relative;
+    animation-name: ali;
+   /* animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.1, 0.82, 1, 1); */
+    animation: ali 3s ease-in-out 0s infinite alternate;
+}
+@keyframes ali{
+    0%{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        left: 0;
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border: 2px solid aqua;
+        left: 800px;
+    }
+}
